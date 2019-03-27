@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="WindowsAzure.Storage" Version="9.3.3" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SimonGilbert.Blog.Azure\SimonGilbert.Blog.Azure.csproj" />
+    <ProjectReference Include="..\SimonGilbert.Blog.Models\SimonGilbert.Blog.Models.csproj" />
+  </ItemGroup>
+</Project>

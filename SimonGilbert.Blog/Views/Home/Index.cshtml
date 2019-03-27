@@ -1,0 +1,17 @@
+﻿@using SimonGilbert.Blog.Models
+@model Order
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Your Order</h1>
+    @if(Model != null)
+    {
+        <p>@Model.Status - @Model.Timestamp</p>
+    }
+    else
+    {
+        <p>Your order has not been created yet</p>
+    }
+</div>
