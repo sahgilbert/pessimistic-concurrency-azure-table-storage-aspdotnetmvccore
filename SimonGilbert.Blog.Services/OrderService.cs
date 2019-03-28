@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Threading.Tasks;
-using Microsoft.Extensions.Configuration;
 using Microsoft.WindowsAzure.Storage;
 using Microsoft.WindowsAzure.Storage.Blob;
 using Microsoft.WindowsAzure.Storage.Table;
@@ -11,17 +10,14 @@ namespace SimonGilbert.Blog.Services
 {
     public class OrderService : IOrderService
     {
-        private readonly IConfiguration _configuration;
         private readonly IOrderRepository _repository;
         private readonly CloudBlobContainer _cloudBlobContainer;
         private readonly TimeSpan _minimumAcquireLeaseTimeSpan = TimeSpan.FromSeconds(15);
 
         public OrderService(
-            IConfiguration configuration,
             IOrderRepository repository,
             CloudBlobContainer cloudBlobContainer)
         {
-            this._configuration = configuration;
             this._repository = repository;
             this._cloudBlobContainer = cloudBlobContainer;
         }
