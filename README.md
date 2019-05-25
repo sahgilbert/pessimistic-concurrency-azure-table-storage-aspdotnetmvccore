@@ -6,5 +6,8 @@
 ## Read My Accompanying Blog
 - https://www.simongilbert.net/azure-table-storage-pessimistic-concurrency-aspdotnetmvccore/
 
+## Read My Other Blogs
+- https://www.simongilbert.net
+
 ### License
 See the [LICENSE](LICENSE.md) file for license rights and limitations (MIT).
